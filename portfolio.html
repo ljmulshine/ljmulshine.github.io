@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Liam Mulshine: Project Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">Liam Mulshine</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Project Portfolio
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/psPrototype.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Adjustable Power Supply</h3>
+                <h4>Frustration of Electronics, Spring 2016</h4>
+                <p>This project was the first of three embedded design projects I carried out in ES91r, the Frustration of Electronics, a supervised reading and research course I took during the Spring of my sophomore year. I worked with two others to design a portable power supply device, originally intended for use by students in Harvard’s introductory electrical engineering course to power their circuits without a benchtop power supply. I led my team through the brunt of each major design phase, keeping us on track despite simultaneously pipelining other design projects, dealing with short turnarounds between project deadlines, and accommodating scheduling difficulties among my teammates. After a series of critical design reviews with Harvard electrical engineering faculty members, and multiple design iterations, we achieved a functional, battery powered, adjustable power supply with overvoltage and overcurrent protection, a dynamic range of 1.5V-10Vand the capacity to source or sink current upwards of 500mA. Although we did not meet each of the technical specifications we initially defined, the end product was a strong first prototype. I am currently iterating upon this preliminary design in order to improve upon the device’s absolute maximum ratings and ergonomics.</p>
+                <a class="btn btn-primary" href="images/FoEps.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/instrumentation.jpg" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Instrumentation Device</h3>
+                <h4>Frustration of Electronics, Spring 2016</h4>
+                <p>In the second of three embedded circuit design projects for the course, ES91r, I worked with three others to design a high-precision instrumentation device to interface with a load-cell. Precision was a critical consideration throughout the process; consequently, important design considerations were made to ensure signal integrity: utilizing differential signals and an instrumentation amplifier to combat noise, designing an anti-aliasing filter with appropriate pass and stopband frequencies, ensuring a sufficiently high analog-to-digital conversion rate to allow capture of high-speed events, and making layout design decisions that reduce the effect of digital transients and EMI on the analog signal on its path to the digital realm. We were able to design hardware to allow us to process our signal digitally and save it to a microSD card; however, we were unable to implement the necessary code for this attribute due to time constraints at the end of the semester. In particular, I left this project with a strong understanding of analog-to-digital conversion, and high-precision analog circuit design.</p>
+                <a class="btn btn-primary" href="images/FOE-ScaleReport.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Three -->
+         <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/HRBB.jpg" width="80%" style="margin:24px 0px 0px 40px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Fast Reacting Heart Rate Monitor</h3>
+                <h4>The Joy of Electronics, Fall 2015</h4>
+                <p>In my introductory electrical engineering course, I worked with one other student to design a fast reacting, heart rate monitor. Utilizing an infrared sensor to sense blood flow through the finger or ear, we were able to detect pulses with a predominantly analog signal conditioning circuit that we designed, as well as calculate and display the user’s heart rate with an Arduino. In both our hardware and software design we focused on achieving accurate readings capable of both keeping up with a dynamic heart rate, and of producing an accurate output within 3 seconds of the first detected pulse. Though frequency modulation, significant analog filtering, and a precise heart rate calculation algorithm, we were able to achieve just this.</p>
+                <a class="btn btn-primary" href="images/HRfinalReport.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Four -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/HR.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Embedded Heart Rate Monitor</h3>
+                <h4>Personal Project, Summer 2016</h4>
+                <p>I decided to rework the design of my introductory electrical engineering course’s final project in order to make a more ergonomic, compact, power efficient heart rate monitoring system. I replaced the Arduino with an ARM Cortex M0+ uC to allow greater signal processing flexibility, improved the design of the core analog circuitry, and added functionality to reduce overall power consumption. I am currently in the process of assembling, testing and debugging this device. Stay tuned!</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Five -->
+           <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/chargingStation.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Wireless Charging Station</h3>
+                <h4>Frustration of Electronics, Spring 2016</h4>
+                <p>My team and I designed a Wireless Charging Station meant to interface directly with a small remote-control car. While we were unable to produce a physical prototype, iterating completely through an intense design process - creating our own project specifications, conducting research on wireless power transfer, designing the final circuit and PCB, etc. - not only increased my knowledge of power systems, but also proved to be an excellent project experience, beginning with little knowledge of the subject and finishing with a complete design within the span of two weeks.</p>
+                <a class="btn btn-primary" href="images/FOE-ScaleReport.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+         <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/tilePuzzle.png" width="100%" style="margin:0px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Npuzzles</h3>
+                <h4>CS51, Spring 2015</h4>
+                <p>I helped implement NPuzzles, written in the functional programming language, Clojure, to solve m-by-n sliding tile puzzles with a recursive implementation of the A* best-first-search algorithm. I was also involved in the beginning stages of using a genetic algorithm to solve sliding-tile puzzles, but ultimately focused predominantly on the A* algorithm. A* can be quite data intensive, requiring traversal through all solution paths before reaching a goal/solution state. Therefore, first and foremost, we designed for efficiency and modularity, iterating through multiple designs before choosing our core data structures. We tested our program with various admissible heuristic functions, and achieved an average solve time for 3x3 puzzles of approximately 350 milliseconds.</p>
+                <a class="btn btn-primary" href="images/npuzzles.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/OTAsch.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Operational Transconductance Amplifier</h3>
+                <h4>ES154, Electronic Devices and Circuits, Spring 2016</h4>
+                <p>Using the Cadence Spectre Circuit Simulator, I designed, and characterized the performance of an operational transconductance amplifier. I started with a hand-design, considering the best circuit topology to meet the defined performance specifications, and calculated transistor parameters using small-signal approximations to ensure the amplifier would behave properly within the specifications. Due to the unavoidable presence of transistor mismatches, which cause inaccuracies such as input offset voltage, I brought my hand design into the Cadence design tool, and altered my original transistor parameters to correct for any unexpected behavior. I then characterized the DC gain, bandwidth, power supply rejection ration (PSRR), common mode rejection ratio (CMRR), and phase margin of my OTA, and analyzed the tradeoff between gain and bandwidth in amplifier design. </p>
+                <a class="btn btn-primary" href="images/OTA1.pdf">Project Report - Part 1<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="images/OTA2.pdf">Project Report - Part 2<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/musicNotes.jpeg" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>JamOn</h3>
+                <h4>CS50, Introduction to Computer Science, Fall 2015</h4>
+                <p>JamOn is a localhost based website that I created with a friend during my freshman year introductory computer science course that allows you to more easily share music with your friends. Originally it interfaced with the SoundCloud API, and allowed you to invite friends to collaborate to make a playlist. Whether you are preparing a playlist for a party or simply looking for music suggestions from your friends, this site would prove very helpful. After the semester ended, I began to work to extend the website’s functionality so that it could interface with Spotify and was able to make it semi-functional. Unfortunately, within weeks of finishing our project, another company had released an app whose functionality was roughly equivalent to ours, so I did not continue developing much further; however, the project proved to be a great design experience.</p>
+                <a class="btn btn-primary" href="images/CS50JamOn.pdf">Project Design Overview<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row" id="contact">
+        <div class="col-md-8" style="margin: 0px 0px 0px 230px" width="10" length="10">
+            <div class="media">
+                <div class="media-left">
+                    <img src="images/me2.jpg" width="170" style="margin: 30px 0px 0px 0px; border-radius: 20px">
+                </div>
+                <div class="media-body">
+                    
+                    <h1 style="margin: 40px 0px 10px 60px ">Contact Me<h>
+                    <p style="font-size: 17px; margin:20px 0px 0px 0px; text-align:justify">Email: <a href="mailto:lmulshine@college.harvard.edu">lmulshine@college.harvard.edu</a></p>  
+                    <p style="font-size: 17px; margin:20px 0px 0px 0px; text-align:justify">Phone: (518) 681-6755</p>
+                    <p style="font-size: 17px; margin:20px 0px 0px 0px; text-align:justify">Github: <a href="https://www.youtube.com/playlist?list=PLf_0PnuFStPUuAAU2p1u-mecCAI9eYBv1">https://github.com/ljmulshine</a>
+                     
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Liam Mulshine 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
