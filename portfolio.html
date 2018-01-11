@@ -45,9 +45,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">About</a>
-                    </li>
-                    <li>
                         <a href="portfolio.html">Projects</a>
                     </li>
                     <li>
@@ -65,15 +62,22 @@
 
     <!-- Page Content -->
     <div class="container">
-
-        <!-- Page Heading -->
+                <!-- /.row -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-18">
                 <h1 class="page-header">Project Portfolio
                 </h1>
             </div>
         </div>
+
+
         <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Electronics/Hardware
+                </h1>
+            </div>
+        </div>
 
 
         <!-- Project One -->
@@ -84,7 +88,7 @@
                 </a>
             </div>
             <div class="col-md-7">
-                <h3>Isolated Power Management Board for a Stratospheric Chemistry Experiment</h3>
+                <h3>Power Management for Stratospheric Chemistry Instrument</h3>
                 <h4>Independent Study, Spring 2017</h4>
                 <p>During the spring semester of my junior year, I worked with the engineering team for Harvard's Anderson Research Group to help complete the design of an atmospheric chemistry instrument intended to measure the concentration of key ozone depleting chemical species in the stratosphere. I focused on power system design, and worked to develop a power management board whose purpose was to isolate the main power supply, which powered the pumps, laser and the central computer system, from sensitive measurement subsystem power supplies. The power management board that I designed consists of a custom 0 - 7.5V adjustable linear regulator, isolated Flyback and Cuk converters for dual supply functionality, and extensive common mode and differential filtering.</p>
                 <a class="btn btn-primary" href="images/ES91r_Summative_Report.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -102,26 +106,9 @@
                 </a>
             </div>
             <div class="col-md-7">
-                <h3>Multi-cycle MIPS Processor, FPGA Implementation</h3>
+                <h3>Multi-cycle MIPS Processor</h3>
                 <h4>CS141, Fall 2016</h4>
                 <p>As part of my CS141 final project I worked with one other student to design an FPGA based MIPS processor using Verilog. After helping to design the arithmetic logic unit (ALU) and register file, I implemented the multi-cycle data path and finite state machine control unit. I then wrote an assembler script to convert limited instruction set MIPS assembly programs to machine language. To test our multi-cycle MIPS processor, I wrote multiple assembly programs, including a recursive fibonacci calculator, assembled them with my assembler, and loaded the resulting executables into program memory, before running each program and verifying the results in data memory. </p>
-            </div>
-        </div>
-
-        <hr>
-
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-5" stlye>
-                <a>
-                    <img class="img-rounded" src="images/LQR-LQG.png" width="100%" style="margin:24px 0px 0px 0px">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Designing an Optimal Trajectory Tracking Controller</h3>
-                <h4>ES158, Fall 2016</h4>
-                <p>Inspired by a challenge that my robotics club, RFC Cambridge, was facing, I worked with one other student to design an optimal trajectory tracking controller for a two wheeled nonholonomic robot. Our initial approach for this control problem was to use a simple PI controller to track the reference path. However, I noticed that this simple controller was not nearly robust enough considering the time-varying nature of our system. After some research, we determined that we would likely see improved results using the time-varying Linear-Quadratic-Regulator (LQR), a strategy that utilizes the Differential Ricatti Equations to determine the optimal time-varying feedback gain. The results of this controller were strong. However, since LQR does not account for system disturbances and noise, we introduced a Kalman filter, the optimal observer, to estimate the our robot's true position. Combining LQR's optimal feedback gain with an optimal observer, we achieved a robust Linear-Quadratic-Gaussian (LQG) controller. Using this strategy, we could track our reference path in the presence of simulated noise and disturbances.</p>
             </div>
         </div>
 
@@ -137,11 +124,28 @@
             <div class="col-md-7">
                 <h3>Adjustable Power Supply</h3>
                 <h4>Frustration of Electronics, Spring 2016</h4>
-                <p>This project was the first of three embedded design projects I carried out in ES91r, the Frustration of Electronics, a supervised reading and research course I took during the Spring of my sophomore year. I worked with two others to design a portable power supply device, originally intended for use by students in Harvard’s introductory Electrical Engineering course to power their circuits without a benchtop power supply. I led my team through the brunt of each major design phase, keeping us on track despite simultaneously pipelining other design projects, dealing with short turnarounds between project deadlines, and accommodating scheduling difficulties among my teammates. After a series of critical design reviews with Harvard Electrical Engineering faculty members, and multiple design iterations, we achieved a functional, battery powered, adjustable power supply with overvoltage and overcurrent protection, a dynamic range of +/- 1.5V-10V and the capacity to source or sink current upwards of 500mA. Although we did not meet each of the technical specifications that we initially defined, the end product was a strong first prototype. I am currently iterating upon this preliminary design in order to improve the device’s absolute maximum ratings and ergonomics.</p>
+                <p>This project was the first of three embedded design projects I carried out in ES91r, the Frustration of Electronics, a supervised reading and research course I took during the Spring of my sophomore year. I worked with two others to design a portable power supply device, originally intended for use by students in Harvard’s introductory Electrical Engineering course to power their circuits without a benchtop power supply. I led my team through the brunt of each major design phase, keeping us on track despite simultaneously pipelining other design projects, dealing with short turnarounds between project deadlines, and accommodating scheduling difficulties among my teammates. After a series of critical design reviews with Harvard Electrical Engineering faculty members, and multiple design iterations, we achieved a functional, battery powered, adjustable power supply with overvoltage and overcurrent protection, a dynamic range of +/- 1.5V-10V and the capacity to source or sink current upwards of 500mA. Although we did not meet each of the technical specifications that we initially defined, the end product was a strong first prototype.</p>
                 <a class="btn btn-primary" href="images/FoEps.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/OTAsch.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Operational Transconductance Amplifier</h3>
+                <h4>ES154, Electronic Devices and Circuits, Spring 2016</h4>
+                <p>Using the Cadence Spectre Circuit Simulator, I designed and characterized the performance of an operational transconductance amplifier. I started with a hand-design, considering the best circuit topology to meet the defined performance specifications, and calculated transistor parameters using small-signal approximations to ensure the amplifier behaved within its specifications. Due to the unavoidable presence of transistor mismatches, which cause inaccuracies such as input offset voltage, I brought my hand-design into the Cadence design tool and altered my original transistor parameters to correct for any unexpected behavior. I then characterized the DC gain, bandwidth, power supply rejection ratio (PSRR), common mode rejection ratio (CMRR), and phase margin of my OTA, and analyzed the tradeoff between gain and bandwidth in amplifier design. </p>
+                <a class="btn btn-primary" href="images/OTA1.pdf">Project Report - Part 1<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="images/OTA2.pdf">Project Report - Part 2<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
 
         <hr>
 
@@ -155,7 +159,7 @@
             <div class="col-md-7">
                 <h3>Instrumentation Device</h3>
                 <h4>Frustration of Electronics, Spring 2016</h4>
-                <p>In the second of three embedded circuit design projects for the course, ES91r, I worked with three others to design a high-precision instrumentation device to interface with a load-cell. Precision was a critical consideration throughout the process. Consequently, important design considerations were made to ensure signal integrity: utilizing differential signals and an instrumentation amplifier to combat noise, designing an anti-aliasing filter with appropriate pass and stopband frequencies, ensuring a sufficiently high analog-to-digital conversion rate to allow capture of high-speed events, and making layout design decisions that reduce the effect of digital transients and EMI on the analog signal on its path to the digital realm. I left this project with a strong understanding of analog-to-digital conversion, and high-precision analog circuit design.</p>
+                <p>In the second of three embedded circuit design projects for the course, ES91r, I worked with three others to design a high-precision instrumentation device to interface with a load-cell. Precision was a critical consideration throughout the process. Consequently, important design considerations were made to ensure signal integrity: utilizing differential signals and an instrumentation amplifier to combat noise, designing an anti-aliasing filter with appropriate pass and stopband frequencies, ensuring a sufficiently high analog-to-digital conversion rate to allow capture of high-speed events, and making layout design decisions that reduce the effect of digital transients and EMI on the analog signal on its path to the digital realm. </p>
                 <a class="btn btn-primary" href="images/FOE-ScaleReport.pdf">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
@@ -181,23 +185,6 @@
 
         <hr>
 
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-5" stlye>
-                <a>
-                    <img class="img-rounded" src="images/HR.png" width="80%" style="margin:24px 0px 0px 0px">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Embedded Heart Rate Monitor</h3>
-                <h4>Personal Project, Summer 2016</h4>
-                <p>I decided to rework the design of my introductory Electrical Engineering course’s final project in order to make a more ergonomic, compact, power efficient heart rate monitoring system. I replaced the Arduino with an ARM Cortex M0+ uC to allow greater signal processing flexibility, improved the design of the core analog circuitry, and added functionality to reduce overall power consumption. I am currently in the process of assembling, testing and debugging this device. Stay tuned!</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
         <!-- Project Six -->
            <div class="row">
             <div class="col-md-5" stlye>
@@ -212,10 +199,125 @@
                 
             </div>
         </div>
-        <!-- /.row -->
 
         <hr>
+         <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/plane.jpg" width="80%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Remote Control Airplanes</h3>
+                <h4>Personal Projects</h4>
+                <p>I began working with RC aircraft in highschool, beginning with at kit, pictured on the left. Since then, I've applied the skills that I've since acquired to design both the body and control electronics for an RC aircraft with 3' wingspan.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Software 
+                </h1>
+            </div>
+        </div>
+
+
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/LQR-LQG.png" width="90%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Optimal Trajectory Tracking Controller</h3>
+                <h4>ES158, Fall 2016</h4>
+                <p>Inspired by a challenge that my robotics club, RFC Cambridge, was facing, I worked with one other student to design an optimal trajectory tracking controller for a two wheeled nonholonomic robot. Our initial approach for this control problem was to use a simple PI controller to track the reference path. However, I noticed that this simple controller was not nearly robust enough considering the time-varying nature of our system. After some research, we determined that we would likely see improved results using the time-varying Linear-Quadratic-Regulator (LQR), a strategy that utilizes the Differential Ricatti Equations to determine the optimal time-varying feedback gain. The results of this controller were strong. However, since LQR does not account for system disturbances and noise, we introduced a Kalman filter, the optimal observer, to estimate the our robot's true position. Combining LQR's optimal feedback gain with an optimal observer, we achieved a robust Linear-Quadratic-Gaussian (LQG) controller. Using this strategy, we could track our reference path in the presence of simulated noise and disturbances.</p>
+
+                <a class="btn btn-primary" href="images/ES158_Final_Report.pdf" style="margin:0px 0px 0px 0px">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+           <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/signal.jpg" width="90%" style="margin:50px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Sub-Nyquist Sampling</h3>
+                <h4>AM205: Advanced Scientific Computing, Fall 2017</h4>
+                <p>Signal sampling, within the field of Digital Signal Processing, is typically governed by the well-known Nyquist criterion. Nyquist's theory claims that a bandlimited signal can be perfectly reconstructed from its samples if the system's sampling rate exceeds twice the signal bandwidth. In this project, we push the boundaries of the Nyquist criterion, developing a scheme which achieves precise signal reconstruction of a bandlimited signal using sub-Nyquist sampling. This technique determines a signal's instantaneous bandwidth via a short-time fourier transform of the signal's taylor approximation, and adjusts the sample rate based on the measured instantaneous bandwidth. Care was taken to ensure that the method that my project-mate and I designd could be run in real-time provided custom hardware. While meant for real-time systems, the scheme that we developed could also be used generally for data compression and reconstruction of any bandlimited signal.
+                </p>
+
+                <a class="btn btn-primary" href="images/AM205_Final_Report.pdf" style="margin:0px 0px 0px 0px">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/graphcut.jpg" width="80%" style="margin:35px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Image Segmentation</h3>
+                <h4>ES255: Statistical Inference, Fall 2017</h4>
+                <p>Image segmentation is commonly used in the field of computer vision to identify the boundary between regions within an image or video stream. I implemented a binary image segmentation scheme in MATLAB, based in part on the 'GrabCut' method widely used in professional image processing toolboxes. This approach makes use of a key statistical model, the markov random field, to characterize an input image. An optimal segmentation is then found using an iterative graph cut energy minimization/maximum flow algorithm.</p>
+                <a class="btn btn-primary" href="images/ES255_Final_Report.pdf" style="margin:0px 0px 0px 0px">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
         
+        </div>
+
+        <hr>
+
+           <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/scene.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Self-Camera Calibration</h3>
+                <h4>CS283: Computer Vision, Fall 2017</h4>
+                <p>What do robotics, forensics, and autonomous driving have in common? Each makes heavy use of a computer vision system, often one that requires extreme precision. As these fields, and others, advance, the demands that each makes on the precision of its vision system heightens. Correspondingly, the need for simple and accurate methods of camera calibration grows stronger. I implemented a self-calibration scheme that fully calibrates any camera provided three image views taken from the same point in space. This implementation determines each of a classical camera's intrinsic parameters: focal length, principal point, and skew factor. The implementation utilizes fundamentals of linear algebra and concepts of projective geometry developed by the computer vision researcher, Richard Hartley.</p>
+                <a class="btn btn-primary" href="images/CS283_Final_Report.pdf" style="margin:0px 0px 0px 0px">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+                <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-5" stlye>
+                <a>
+                    <img class="img-rounded" src="images/botnet.png" width="100%" style="margin:24px 0px 0px 0px">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>Steganographic Botnet Communication Channel</h3>
+                <h4>CS263: Security Systems, Fall 2017</h4>
+                <p> I worked with two others to create SocialBotnet, a covert communication channel and steganography protocol for bot networks, which provides limited detectibility and robustness to obstruction. SocialBotnet utilizes the popular social media platform, Twitter, to covertly communicate with malware-infected, network-connected “bot” computer systems with authenticity and integrity guarantees. It uses a unique image-based encoding scheme, which I designed and implemented, to camouflage messages as seemingly innocuous images within comments on Tweets from moderately popular Twitter accounts. Bots scan for covert messages on a range of Twitter accounts, decode the message, and execute any instructions that it contains on the infected machine. Note that this project does not generate or distribute malware; instead it serves as a proof of concept for the existance of covert communication channels between corrupted machines through popular socal media sites.</p>
+                <a class="btn btn-primary" href="images/CS263_Final_Project_Report.pdf" style="margin:0px 0px 0px 0px">Project Report<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+
+
+        </div>
+
+        <hr>
+
         <!-- Project Seven -->
         <div class="row">
             <div class="col-md-5" stlye>
@@ -231,36 +333,6 @@
             </div>
         </div>
 
-        <hr>
-
-        <div class="row">
-            <div class="col-md-5" stlye>
-                <a>
-                    <img class="img-rounded" src="images/OTAsch.png" width="100%" style="margin:24px 0px 0px 0px">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Operational Transconductance Amplifier</h3>
-                <h4>ES154, Electronic Devices and Circuits, Spring 2016</h4>
-                <p>Using the Cadence Spectre Circuit Simulator, I designed and characterized the performance of an operational transconductance amplifier. I started with a hand-design, considering the best circuit topology to meet the defined performance specifications, and calculated transistor parameters using small-signal approximations to ensure the amplifier behaved within its specifications. Due to the unavoidable presence of transistor mismatches, which cause inaccuracies such as input offset voltage, I brought my hand-design into the Cadence design tool and altered my original transistor parameters to correct for any unexpected behavior. I then characterized the DC gain, bandwidth, power supply rejection ratio (PSRR), common mode rejection ratio (CMRR), and phase margin of my OTA, and analyzed the tradeoff between gain and bandwidth in amplifier design. </p>
-                <a class="btn btn-primary" href="images/OTA1.pdf">Project Report - Part 1<span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="images/OTA2.pdf">Project Report - Part 2<span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-
-        <hr>
-         <div class="row">
-            <div class="col-md-5" stlye>
-                <a>
-                    <img class="img-rounded" src="images/plane.jpg" width="80%" style="margin:24px 0px 0px 0px">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Remote Control Airplane</h3>
-                <h4>Personal Project - Summer 2015 and 2016</h4>
-                <p>This summer I finished building a remote control airplane, which I constructed from scratch, referring to the design for the SIG Kadet Senior RC Airplane along the way. I'm excited to take this plane to the skies next time I'm home! </p> 
-            </div>
-        </div>
         <hr>
 
         <div class="row">
